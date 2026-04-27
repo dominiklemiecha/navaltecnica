@@ -9,6 +9,15 @@ html, body {
   max-width: 100vw;
 }
 
+/* Lock background page scroll while bottom-sheet menu is open */
+body.body-locked {
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
 :root {
   --bg: #f4f6f9;
   --sidebar-bg: #ffffff;
@@ -660,57 +669,77 @@ input[type="number"] {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 60px;
+  height: 64px;
   padding-bottom: env(safe-area-inset-bottom, 0);
   background: var(--card-bg);
   border-top: 1px solid var(--border);
-  box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+  box-shadow: 0 -2px 14px rgba(0,0,0,0.07);
   z-index: 200;
   align-items: center;
   justify-content: space-between;
-  padding-left: 14px;
-  padding-right: 14px;
-  gap: 12px;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
-.mobile-bb-btn {
-  background: var(--row-hover);
+.mobile-bb-side {
+  flex: 1;
+  background: none;
   border: none;
-  padding: 8px 14px 8px 10px;
+  padding: 6px 4px;
   cursor: pointer;
-  color: var(--text);
-  border-radius: 999px;
+  color: var(--text-light);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
+  justify-content: center;
+  gap: 2px;
+  font-size: 0.68rem;
   font-weight: 600;
-  transition: all 0.15s;
+  letter-spacing: 0.2px;
+  transition: color 0.15s;
+  min-height: 52px;
+  border-radius: 8px;
 }
 
-.mobile-bb-btn.active {
+.mobile-bb-side:active {
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+.mobile-bb-side svg {
+  opacity: 0.75;
+}
+
+.mobile-bb-logout:active {
+  color: var(--danger);
+  background: var(--danger-bg);
+}
+
+.mobile-bb-center {
+  flex: 0 0 auto;
+  width: 60px;
+  height: 60px;
+  margin: 0 4px;
+  margin-top: -22px;
+  border-radius: 50%;
   background: var(--accent);
   color: #fff;
-}
-
-.mobile-bb-logo {
-  height: 26px;
-  object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(15%) sepia(70%) saturate(2000%) hue-rotate(215deg) brightness(95%);
-}
-
-.mobile-bb-user {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--accent-light);
-  color: var(--accent);
+  border: 4px solid var(--card-bg);
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
-  font-size: 0.85rem;
-  flex-shrink: 0;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: transform 0.18s ease, background 0.18s ease;
+}
+
+.mobile-bb-center:active {
+  transform: scale(0.92);
+}
+
+.mobile-bb-center.active {
+  background: var(--text);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.25);
 }
 
 .sidebar-drag-handle {
@@ -802,10 +831,10 @@ input[type="number"] {
     display: block;
   }
 
-  /* Main content full width, padding-bottom for fixed bottom bar */
+  /* Main content full width, padding-bottom for fixed bottom bar (64 + extra for floating center) */
   .main-content {
     margin-left: 0;
-    padding: 16px 12px calc(76px + env(safe-area-inset-bottom, 0));
+    padding: 16px 12px calc(90px + env(safe-area-inset-bottom, 0));
     max-width: 100%;
     overflow-x: hidden;
   }

@@ -1,36 +1,73 @@
 import { useState, useEffect } from 'react';
-import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 
 export default function Layout() {
   const { user, logout } = useAuth();
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   // Close sidebar on route change (mobile)
   useEffect(() => {
     setSidebarOpen(false);
   }, [location.pathname]);
 
+  // Lock body scroll when bottom-sheet is open
+  useEffect(() => {
+    if (sidebarOpen) {
+      document.body.classList.add('body-locked');
+    } else {
+      document.body.classList.remove('body-locked');
+    }
+    return () => document.body.classList.remove('body-locked');
+  }, [sidebarOpen]);
+
+  // Contextual quick action on the left of the bottom bar
+  const isOnNew = location.pathname.startsWith('/new');
+  const quickAction = isOnNew
+    ? { to: '/', label: 'Lista', icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/></svg>
+      ) }
+    : { to: '/new', label: 'Nuovo', icon: (
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+      ) };
+
   return (
     <div className="layout">
       {/* Mobile bottom bar (fissa) */}
       <div className="mobile-bottom-bar">
         <button
-          className={`mobile-bb-btn ${sidebarOpen ? 'active' : ''}`}
+          className="mobile-bb-side"
+          onClick={() => navigate(quickAction.to)}
+          aria-label={quickAction.label}
+        >
+          {quickAction.icon}
+          <span>{quickAction.label}</span>
+        </button>
+
+        <button
+          className={`mobile-bb-center ${sidebarOpen ? 'active' : ''}`}
           onClick={() => setSidebarOpen(!sidebarOpen)}
           aria-label="Menu"
+          aria-expanded={sidebarOpen}
         >
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
             {sidebarOpen
               ? <path d="M18 6L6 18M6 6l12 12" />
               : <><path d="M3 12h18" /><path d="M3 6h18" /><path d="M3 18h18" /></>
             }
           </svg>
-          <span>{sidebarOpen ? 'Chiudi' : 'Menu'}</span>
         </button>
-        <img src="/logo.png" alt="Navaltecnica" className="mobile-bb-logo" />
-        <div className="mobile-bb-user" title={user?.name}>{user?.name?.[0] || 'A'}</div>
+
+        <button
+          className="mobile-bb-side mobile-bb-logout"
+          onClick={logout}
+          aria-label="Esci"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          <span>Esci</span>
+        </button>
       </div>
 
       {/* Overlay (bottom-sheet) */}
