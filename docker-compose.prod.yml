@@ -1,0 +1,57 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: navaltecnica
+      MYSQL_USER: navaltecnica
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./server/database/schema.sql:/docker-entrypoint-initdb.d/01-schema.sql
+      - ./server/database/seed.sql:/docker-entrypoint-initdb.d/02-seed.sql
+    command: --default-authentication-plugin=mysql_native_password
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: navaltecnica
+      DB_PASSWORD: ${MYSQL_PASSWORD}
+      DB_NAME: navaltecnica
+      JWT_SECRET: ${JWT_SECRET}
+      PORT: 3001
+    depends_on:
+      mysql:
+        condition: service_healthy
+    volumes:
+      - pdf_output:/app/output
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+      args:
+        VITE_API_URL: /api
+    restart: unless-stopped
+    expose:
+      - "80"
+    depends_on:
+      - server
+
+volumes:
+  mysql_data:
+  pdf_output:

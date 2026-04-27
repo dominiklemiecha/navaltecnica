@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.env
+*.log
+output/
+.DS_Store
+~$*
+*.xltm
+*.xlsx
+
+# Editor / tooling
+.claude/
+.playwright-mcp/
+.vscode/
+.idea/
+
+# Screenshots dev
+*.png
+!client/public/*.png

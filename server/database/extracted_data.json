@@ -1,0 +1,2964 @@
+{
+  "dests_italy": [
+    [
+      "ANCONA",
+      844,
+      8.3,
+      68
+    ],
+    [
+      "CALA GALERA",
+      506,
+      6.3,
+      28
+    ],
+    [
+      "CARRARA",
+      0,
+      0,
+      0
+    ],
+    [
+      "GENOVA",
+      250,
+      3,
+      26
+    ],
+    [
+      "LA SPEZIA",
+      70,
+      1.15,
+      6
+    ],
+    [
+      "LAVAGNA",
+      160,
+      2,
+      18
+    ],
+    [
+      "LIVORNO",
+      150,
+      2.2,
+      12
+    ],
+    [
+      "LOANO",
+      386,
+      5,
+      40
+    ],
+    [
+      "NAPOLI",
+      1200,
+      13,
+      95
+    ],
+    [
+      "PESARO",
+      715,
+      7.3,
+      60
+    ],
+    [
+      "PIOMBINO",
+      310,
+      4.1,
+      28
+    ],
+    [
+      "PISA",
+      115,
+      2,
+      8
+    ],
+    [
+      "RAPALLO",
+      185,
+      2.2,
+      20
+    ],
+    [
+      "SANREMO",
+      520,
+      6.3,
+      57.8
+    ],
+    [
+      "SAVONA",
+      330,
+      4.2,
+      33
+    ],
+    [
+      "VIAREGGIO",
+      70,
+      1.3,
+      3
+    ]
+  ],
+  "dests_med": [
+    [
+      "CARRARA TO",
+      "KM",
+      "TRAVEL HOURS",
+      "HIGWAY"
+    ],
+    [
+      "CANNES",
+      684,
+      8.4,
+      83
+    ],
+    [
+      "LA CIOTAT",
+      994,
+      11.2,
+      118
+    ],
+    [
+      "MONACO",
+      600,
+      7.3,
+      66
+    ],
+    [
+      "NIZZA",
+      614,
+      7.4,
+      73
+    ],
+    [
+      "TOLONE",
+      914,
+      10.3,
+      110
+    ]
+  ],
+  "parts": [
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "IMPELLER",
+      "part_number": "020492",
+      "price": 100.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "MACERATOR HOUSING",
+      "part_number": "020491",
+      "price": 250.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "MACERATOR PLATE",
+      "part_number": "014543",
+      "price": 64.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "SHAFT",
+      "part_number": "014542",
+      "price": 159.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "CONNECTING FLANGE",
+      "part_number": "020494",
+      "price": 135.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "SHAFT SEALING",
+      "part_number": "007145",
+      "price": 38.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "MACERATOR",
+      "name": "GASKET",
+      "part_number": "007144",
+      "price": 8.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "DOSING PUMP",
+      "name": "ACCESSORIES SET",
+      "part_number": "013242",
+      "price": 45.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "DOSING PUMP",
+      "name": "PUMP HOSE",
+      "part_number": "013234",
+      "price": 20.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "IMPELLER",
+      "part_number": "020492",
+      "price": 66.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "MACERATOR HOUSING",
+      "part_number": "020491",
+      "price": 250.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "MACERATOR PLATE",
+      "part_number": "014543",
+      "price": 64.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "SHAFT",
+      "part_number": "014542",
+      "price": 159.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "CONNECTING FLANGE",
+      "part_number": "020494",
+      "price": 135.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "SHAFT SEALING",
+      "part_number": "007145",
+      "price": 38.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "MACERATOR",
+      "name": "GASKET",
+      "part_number": "007144",
+      "price": 8.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "DOSING PUMP",
+      "name": "ACCESSORIES SET",
+      "part_number": "013242",
+      "price": 45.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "DOSING PUMP",
+      "name": "PUMP HOSE",
+      "part_number": "013234",
+      "price": 20.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "SLUDGE PUMP",
+      "name": "REPAIR SET",
+      "part_number": "000015",
+      "price": 179.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "SLUDGE PUMP",
+      "name": "LIPPED RING",
+      "part_number": "000016",
+      "price": 59.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "SUPERMINI PLUS",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015301",
+      "price": 551.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015302",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "SPLASH RING",
+      "part_number": "015303",
+      "price": 29.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "015304",
+      "price": 396.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "015305",
+      "price": 229.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "015307",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "015308",
+      "price": 257.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "FEEDING PUMP",
+      "name": "PARTS FOR MOUNTING OF JOINT",
+      "part_number": "015309",
+      "price": 129.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015301",
+      "price": 551.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015302",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SPLASH RING",
+      "part_number": "015303",
+      "price": 29.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "015304",
+      "price": 396.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "015305",
+      "price": 229.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "ROTOR",
+      "part_number": "015307",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "STATOR",
+      "part_number": "015308",
+      "price": 257.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PARTS FOR MOUNTING OF JOINT",
+      "part_number": "015309",
+      "price": 129.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "DOSING PUMP - FLOCCULANT",
+      "name": "PUMP HOSE 3 X 8 MM",
+      "part_number": "015258",
+      "price": 91.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "UV SYSTEM",
+      "name": "HANDLE WITH EYELET",
+      "part_number": "015055",
+      "price": 22.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "UV SYSTEM",
+      "name": "IMMERSION PIPE SYSTEM",
+      "part_number": "005218",
+      "price": 277.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "UV SYSTEM",
+      "name": "PIPE BRUSH",
+      "part_number": "015029",
+      "price": 39.7
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "UV SYSTEM",
+      "name": "UV LAMP",
+      "part_number": "005214",
+      "price": 189.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "SLUDGE PUMP",
+      "name": "SPARE PART SET BIG MVI20",
+      "part_number": "016398",
+      "price": 1420.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "SLUDGE PUMP",
+      "name": "SPARE PART SET SMALL MVI20",
+      "part_number": "NA",
+      "price": 740.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "SEA WATER PUMP",
+      "name": "SPARE PART SET BIG CB22",
+      "part_number": "015235",
+      "price": 280.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "DISCHARGE PUMP",
+      "name": "SPARE PART SET BIG MV44",
+      "part_number": "013579",
+      "price": 918.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "DISCHARGE PUMP",
+      "name": "SPARE PART SET SMALL MV44",
+      "part_number": "013578",
+      "price": 305.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "ACCESSORIES",
+      "name": "BLUEFLOC FLOCCULANT",
+      "part_number": "021084",
+      "price": 548.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 0125",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "010398",
+      "price": 568.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "009826",
+      "price": 30.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "010400",
+      "price": 321.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "BUSHING FOR JOINT BOLT",
+      "part_number": "009827",
+      "price": 68.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "010402",
+      "price": 8.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "009831",
+      "price": 501.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "009832",
+      "price": 223.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "JOINT OIL",
+      "part_number": "000763",
+      "price": 16.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "JOINT CLAMP",
+      "part_number": "000764",
+      "price": 26.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "JOINT SHAFT",
+      "part_number": "010401",
+      "price": 479.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "FEEDING PUMP",
+      "name": "JOINT BOOT/SLEEVE",
+      "part_number": "009830",
+      "price": 53.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "GAMMA RING",
+      "part_number": "000131",
+      "price": 27.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "KEY/FITTING KEY",
+      "part_number": "000801",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "MECHANICAL SEAL",
+      "part_number": "000568",
+      "price": 407.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "LOCK NUT",
+      "part_number": "000807",
+      "price": 100.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "LOCKING PLATE",
+      "part_number": "000808",
+      "price": 13.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "IMPELLER",
+      "part_number": "000809",
+      "price": 789.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "CUTTER RING",
+      "part_number": "000810",
+      "price": 724.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MACERATOR",
+      "name": "O-RING",
+      "part_number": "000569",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MULTI PHASE PUMP",
+      "name": "IMPELLER",
+      "part_number": "009779",
+      "price": 863.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MULTI PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "009778",
+      "price": 49.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "MULTI PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "01479",
+      "price": 670.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "SLUDGE PUMP",
+      "name": "REPAIR SET",
+      "part_number": "000015",
+      "price": 179.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "SLUDGE PUMP",
+      "name": "LIPPED RING",
+      "part_number": "000016",
+      "price": 59.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "CLEAR PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "001668",
+      "price": 255.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "012976",
+      "price": 16.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "CLEAR PHASE PUMP",
+      "name": "WASHER",
+      "part_number": "012369",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CIRCLIP",
+      "part_number": "012982",
+      "price": 8.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "CLEAR PHASE PUMP",
+      "name": "FITTING KEY",
+      "part_number": "000654",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "UV SYSTEM",
+      "name": "UV LAMP",
+      "part_number": "005214",
+      "price": 189.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "UV SYSTEM",
+      "name": "PIPE BRUSH",
+      "part_number": "015029",
+      "price": 39.7
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "UV SYSTEM",
+      "name": "HANDLE WITH EYELET",
+      "part_number": "015055",
+      "price": 22.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "UV SYSTEM",
+      "name": "IMMERSION PIPE SYSTEM",
+      "part_number": "005218",
+      "price": 277.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 02 SLIM",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "015304",
+      "price": 396.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015301",
+      "price": 551.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015302",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "SPLASH RING",
+      "part_number": "015303",
+      "price": 29.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "015305",
+      "price": 229.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "015307",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "015308",
+      "price": 257.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "FEEDING PUMP",
+      "name": "PARTS FOR MOUNTING OF JOINT",
+      "part_number": "015309",
+      "price": 129.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "015304",
+      "price": 396.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015301",
+      "price": 551.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PLUG IN SHAFT",
+      "part_number": "015302",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SPLASH RING",
+      "part_number": "015303",
+      "price": 29.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "015305",
+      "price": 229.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "015306",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "ROTOR",
+      "part_number": "015307",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "STATOR",
+      "part_number": "015308",
+      "price": 257.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PARTS FOR MOUNTING OF JOINT",
+      "part_number": "015309",
+      "price": 129.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "DOSING PUMP - FLOCCULANT",
+      "name": "PUMP HOSE 3 X 8 MM",
+      "part_number": "015258",
+      "price": 91.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "UV SYSTEM",
+      "name": "UV LAMP",
+      "part_number": "005214",
+      "price": 189.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "UV SYSTEM",
+      "name": "PIPE BRUSH",
+      "part_number": "015029",
+      "price": 39.7
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "UV SYSTEM",
+      "name": "HANDLE WITH EYELET",
+      "part_number": "015055",
+      "price": 22.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "UV SYSTEM",
+      "name": "IMMERSION PIPE SYSTEM",
+      "part_number": "005218",
+      "price": 277.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "SLUDGE PUMP",
+      "name": "SPARE PART SET BIG MVI20",
+      "part_number": "016398",
+      "price": 1420.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "SLUDGE PUMP",
+      "name": "SPARE PART SET SMALL MVI20",
+      "part_number": "NA",
+      "price": 740.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "SEA WATER PUMP",
+      "name": "SPARE PART SET BIG CB22",
+      "part_number": "015235",
+      "price": 280.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "DISCHARGE PUMP",
+      "name": "SPARE PART SET BIG MV44",
+      "part_number": "013579",
+      "price": 918.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "DISCHARGE PUMP",
+      "name": "SPARE PART SET SMALL MV44",
+      "part_number": "013578",
+      "price": 305.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "ACCESSORIES",
+      "name": "BLUEFLOC FLOCCULANT",
+      "part_number": "021084",
+      "price": 548.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 025",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "CLAMPING RING",
+      "part_number": "001624",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "001626",
+      "price": 94.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "001627",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "008311",
+      "price": 101.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "008312",
+      "price": 656.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "008314",
+      "price": 155.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "THREADED/STATOR BOLT",
+      "part_number": "008315",
+      "price": 7.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "SM-PIN JOINT SEAL",
+      "part_number": "001628",
+      "price": 31.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "GASKET",
+      "part_number": "000058",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "001607",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "PARALLEL PIN",
+      "part_number": "001610",
+      "price": 6.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "ELASTIC SLEEVE",
+      "part_number": "001611",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "CONNECTION SHAFT",
+      "part_number": "001612",
+      "price": 179.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "STUD BOLT",
+      "part_number": "001617",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "CIRCLIP",
+      "part_number": "001621",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "001622",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "FEEDING PUMP",
+      "name": "SLEEVE",
+      "part_number": "001623",
+      "price": 34.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CLAMPING RING",
+      "part_number": "001624",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "001626",
+      "price": 94.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "001627",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "008311",
+      "price": 101.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "ROTOR",
+      "part_number": "008312",
+      "price": 656.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "STATOR",
+      "part_number": "008314",
+      "price": 155.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "THREADED/STATOR BOLT",
+      "part_number": "008315",
+      "price": 7.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SM-PIN JOINT SEAL",
+      "part_number": "001628",
+      "price": 31.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "GASKET",
+      "part_number": "000058",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "001607",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PARALLEL PIN",
+      "part_number": "001610",
+      "price": 6.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "ELASTIC SLEEVE",
+      "part_number": "001611",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CONNECTION SHAFT",
+      "part_number": "001612",
+      "price": 179.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "STUD BOLT",
+      "part_number": "001617",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CIRCLIP",
+      "part_number": "001621",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "001622",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SLEEVE",
+      "part_number": "001623",
+      "price": 34.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "DOSING PUMP",
+      "name": "PUMP HOSE",
+      "part_number": "015258",
+      "price": 91.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "SLUDGE PUMP",
+      "name": "STATOR",
+      "part_number": "015043",
+      "price": 558.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "SLUDGE PUMP",
+      "name": "ROTOR",
+      "part_number": "015044",
+      "price": 501.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "SLUDGE PUMP",
+      "name": "JOINT",
+      "part_number": "015045",
+      "price": 147.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "SLUDGE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "015046",
+      "price": 182.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "SLUDGE PUMP",
+      "name": "O-RING",
+      "part_number": "015047",
+      "price": 32.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "UV SYSTEM",
+      "name": "UV LAMP",
+      "part_number": "005214",
+      "price": 189.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "UV SYSTEM",
+      "name": "PIPE BRUSH",
+      "part_number": "015029",
+      "price": 39.7
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "UV SYSTEM",
+      "name": "HANDLE WITH EYELET",
+      "part_number": "015055",
+      "price": 22.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "UV SYSTEM",
+      "name": "IMMERSION PIPE SYSTEM",
+      "part_number": "005218",
+      "price": 277.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 05",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "GAMMA RING",
+      "part_number": "000131",
+      "price": 27.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "KEY/ FITTING KEY",
+      "part_number": "000801",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "MECHANICAL SEAL",
+      "part_number": "000568",
+      "price": 407.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "LOCK NUT",
+      "part_number": "000807",
+      "price": 100.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "LOCKING PLATE",
+      "part_number": "000808",
+      "price": 13.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "CUTTING WHEEL",
+      "part_number": "000809",
+      "price": 789.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "CUTTER RING",
+      "part_number": "000810",
+      "price": 724.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "MACERATOR",
+      "name": "O-RING",
+      "part_number": "000569",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "001626",
+      "price": 94.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "GASKET/SEALING",
+      "part_number": "000058",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "001607",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "001627",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "SM-PIN JOINT SEAL",
+      "part_number": "001628",
+      "price": 31.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "PARALLEL PIN",
+      "part_number": "001610",
+      "price": 6.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "THROWER",
+      "part_number": "001611",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "CONNECTION SHAFT",
+      "part_number": "001612",
+      "price": 179.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "005349",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "001614",
+      "price": 295.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "014768",
+      "price": 164.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "THRU BOLT",
+      "part_number": "001620",
+      "price": 3.4
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "HEXAGONAL NUT",
+      "part_number": "001036",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "WASHER",
+      "part_number": "001094",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "CIRCLIP",
+      "part_number": "001621",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "001622",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "SLEEVE/BUSHING",
+      "part_number": "001623",
+      "price": 34.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "FEEDING PUMP",
+      "name": "CLAMPING RING",
+      "part_number": "001624",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "001626",
+      "price": 94.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "GASKET/SEALING",
+      "part_number": "000058",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "001607",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "O-RING",
+      "part_number": "001627",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SM-PIN JOINT SEAL",
+      "part_number": "001628",
+      "price": 31.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "PARALLEL PIN",
+      "part_number": "001610",
+      "price": 6.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "THROWER",
+      "part_number": "001611",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CONNECTION SHAFT",
+      "part_number": "001612",
+      "price": 179.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "COUPLING ROD",
+      "part_number": "005349",
+      "price": 359.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "ROTOR",
+      "part_number": "001614",
+      "price": 295.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "STATOR",
+      "part_number": "014768",
+      "price": 164.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "THRU BOLT",
+      "part_number": "001620",
+      "price": 3.4
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "HEXAGONAL NUT",
+      "part_number": "001036",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "WASHER",
+      "part_number": "001094",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CIRCLIP",
+      "part_number": "001621",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "001622",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "SLEEVE/BUSHING",
+      "part_number": "001623",
+      "price": 34.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "CLEAR PHASE PUMP",
+      "name": "CLAMPING RING",
+      "part_number": "001624",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1000 PP",
+      "name": "DOSING VALVE",
+      "part_number": "005271",
+      "price": 169.8
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1000 PP",
+      "name": "HOSE (5M)",
+      "part_number": "005289",
+      "price": 19.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1000 PP",
+      "name": "SPARE PART SET",
+      "part_number": "007150",
+      "price": 336.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1000 PP",
+      "name": "CONNECTION SET",
+      "part_number": "009738",
+      "price": 25.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1000 PP",
+      "name": "VENT VALVE",
+      "part_number": "013582",
+      "price": 70.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1602 PP",
+      "name": "DOSING VALVE",
+      "part_number": "005271",
+      "price": 169.8
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1602 PP",
+      "name": "HOSE (5M)",
+      "part_number": "005289",
+      "price": 19.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1602 PP",
+      "name": "SPARE PART SET",
+      "part_number": "005253",
+      "price": 559.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1602 PP",
+      "name": "CONNECTION SET",
+      "part_number": "009738",
+      "price": 25.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "DOSING PUMP BT4B 1602 PP",
+      "name": "VENT VALVE",
+      "part_number": "013582",
+      "price": 70.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "SLUDGE PUMP MV44",
+      "name": "SPARE PART SET, SMALL",
+      "part_number": "013578",
+      "price": 305.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "SLUDGE PUMP MV44",
+      "name": "SPARE PART SET, BIG",
+      "part_number": "013579",
+      "price": 981.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "UV SYSTEM",
+      "name": "IMMERSION PIPE SYSTEM",
+      "part_number": "005218",
+      "price": 277.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "UV SYSTEM",
+      "name": "UV LAMP",
+      "part_number": "005214",
+      "price": 189.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "UV SYSTEM",
+      "name": "ELECTRONIC BALLAST",
+      "part_number": "005322",
+      "price": 325.6
+    },
+    {
+      "brand": "HAMANN",
+      "model": "HL CONT 010",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "000566",
+      "price": 599.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "JOINT BOLT",
+      "part_number": "000759",
+      "price": 36.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "BUSH FOR JOINT BOLT",
+      "part_number": "000760",
+      "price": 39.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "JOINT OIL",
+      "part_number": "000763",
+      "price": 16.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "JOINT CLAMP",
+      "part_number": "000764",
+      "price": 26.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "JOINT SHAFT",
+      "part_number": "000765",
+      "price": 426.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "JOINT SLEEVE",
+      "part_number": "001451",
+      "price": 31.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "ROTOR",
+      "part_number": "000767",
+      "price": 329.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "STATOR",
+      "part_number": "000169",
+      "price": 239.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "FEEDING PUMP",
+      "name": "O-RING",
+      "part_number": "000775",
+      "price": 15.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "GAMMA RING",
+      "part_number": "000131",
+      "price": 27.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "FITTING KEY",
+      "part_number": "000801",
+      "price": 7.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "MECHANICAL SEAL",
+      "part_number": "000568",
+      "price": 407.9
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "SEALING COVER",
+      "part_number": "000802",
+      "price": 335.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "HEXAGONAL NUT",
+      "part_number": "000803",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "LCOKING WASHER",
+      "part_number": "000804",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "LOCK NUT",
+      "part_number": "000807",
+      "price": 100.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "LOCKING PLATE",
+      "part_number": "000808",
+      "price": 13.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "IMPELLER",
+      "part_number": "000809",
+      "price": 789.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "CUTTER RING",
+      "part_number": "000810",
+      "price": 724.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "MACERATOR",
+      "name": "O-RING",
+      "part_number": "000569",
+      "price": 10.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "PRESSURE VALVE",
+      "part_number": "001869",
+      "price": 207.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "SUCTION VALVE",
+      "part_number": "001870",
+      "price": 149.5
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "HOSE (5m)",
+      "part_number": "000865",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "DOSING VALVE",
+      "part_number": "000174",
+      "price": 157.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "SET OF GASKET",
+      "part_number": "001873",
+      "price": 122.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "DOSING PUMP",
+      "name": "DIAPHRAGM",
+      "part_number": "000881",
+      "price": 249.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "MECHANICAL SEAL",
+      "part_number": "000676",
+      "price": 357.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "IMPELLER",
+      "part_number": "000680",
+      "price": 600.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "SET OF GASKET",
+      "part_number": "000682",
+      "price": 169.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "IMPELLER NUT",
+      "part_number": "000681",
+      "price": 53.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "WEARING PLATE",
+      "part_number": "000679",
+      "price": 347.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "SLUDGE PUMP",
+      "name": "O-RING",
+      "part_number": "001898",
+      "price": 49.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "HOSE CONNECTION",
+      "part_number": "000587",
+      "price": 127.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "PUMP HOUSING",
+      "part_number": "000612",
+      "price": 78.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "IMPELLER",
+      "part_number": "000598",
+      "price": 24.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "O-RING",
+      "part_number": "000600",
+      "price": 9.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "O-RING",
+      "part_number": "000602",
+      "price": 4.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "O-RING",
+      "part_number": "000603",
+      "price": 5.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "SCREW",
+      "part_number": "000608",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "HEXAGONAL SCREW",
+      "part_number": "000609",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "CENTRIFUGAL PUMP",
+      "name": "HEXAGONAL SCREW",
+      "part_number": "000610",
+      "price": 3.0
+    },
+    {
+      "brand": "HAMANN",
+      "model": "L-FRAME/NORWAY FRAME",
+      "category": "ACCESSORIES",
+      "name": "FLOW RATE LIMITED",
+      "part_number": "NA",
+      "price": 35.0
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "STATOR",
+      "part_number": "04101107166",
+      "price": 202.42
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "COVER SEALING",
+      "part_number": "0480304004",
+      "price": 47.57
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304019",
+      "price": 17.48
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "COALESCERT SET",
+      "part_number": "0530203001",
+      "price": 188.84
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "FINE SEPARATION CARTRIDGE",
+      "part_number": "0480305064",
+      "price": 790.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "2/2 WAY PISTON VALVE",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "3/2 WAY PISTON VALVE",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "2/2 WAY SOLENOID  VALVE",
+      "part_number": "0410313032",
+      "price": 153.59
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "00460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126007",
+      "price": 19.31
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 150",
+      "category": "DVZ FSU 150",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "STATOR",
+      "part_number": "04101107166",
+      "price": 202.42
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "COVER SEALING",
+      "part_number": "0480304004",
+      "price": 47.57
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304017",
+      "price": 21.66
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "COALESCERT SET",
+      "part_number": "0530203009",
+      "price": 238.41
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "FINE SEPARATION CARTRIDGE",
+      "part_number": "0480305064",
+      "price": 790.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "2/2 WAY PISTON VALVE",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "3/2 WAY PISTON VALVE",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "2/2 WAY SOLENOID  VALVE",
+      "part_number": "0410313032",
+      "price": 153.59
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "00460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126007",
+      "price": 19.31
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 250",
+      "category": "DVZ FSU 250",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "STATOR",
+      "part_number": "04101107111",
+      "price": 200.59
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "COVER SEALING",
+      "part_number": "0480304005",
+      "price": 53.53
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304016",
+      "price": 28.14
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "COALESCERT SET",
+      "part_number": "0530203010",
+      "price": 282.72
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "FINE SEPARATION CARTRIDGE",
+      "part_number": "0480305066",
+      "price": 822.13
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "2/2 WAY PISTON VALVE",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "3/2 WAY PISTON VALVE",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "2/2 WAY SOLENOID VALVE",
+      "part_number": "0410313032",
+      "price": 153.59
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "0460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126007",
+      "price": 19.31
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 500",
+      "category": "DVZ FSU 500",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "STATOR",
+      "part_number": "04101107112",
+      "price": 249.88
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "COVER SEALING",
+      "part_number": "0480304005",
+      "price": 53.53
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304016",
+      "price": 28.14
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "COALESCER SET",
+      "part_number": "0530203011",
+      "price": 282.72
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "FINE SEPARATION CARTRIDGE",
+      "part_number": "0480305067",
+      "price": 822.13
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "2/2 WAY PISTON VALVE",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "3/2 WAY PISTON VALVE",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "2/2 WAY SOLENOID VALVE",
+      "part_number": "0410313032",
+      "price": 153.59
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "0460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126007",
+      "price": 19.31
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "CELL CLEANING BRUSH",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ FSU 1000",
+      "category": "DVZ FSU 1000",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "STATOR",
+      "part_number": "0410119001",
+      "price": 170.35
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "U-GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304019",
+      "price": 17.0
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "COALESCER SET",
+      "part_number": "0530203001",
+      "price": 183.7
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "COVER SEALING",
+      "part_number": "0480304003",
+      "price": 44.99
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "STUFFING BOX PACKING SET",
+      "part_number": "0410116001",
+      "price": 33.81
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "DESSICATOR CARTRIDGE",
+      "part_number": "0440120001",
+      "price": 95.83
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "0460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "2/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "3/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211002",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "3/2 WAY SOLENOID VALVE",
+      "part_number": "0410313104",
+      "price": 101.5
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "TANK INSTALLATION VALVE",
+      "part_number": "0420220000",
+      "price": 398.06
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "CELL CLEANING BRUSH FOR OMD-11",
+      "part_number": "0440126002",
+      "price": 12.04
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 150",
+      "category": "DVZ VC 150",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "STATOR",
+      "part_number": "0410119001",
+      "price": 175.12
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "U-GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304011",
+      "price": 23.1
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "COALESCER SET",
+      "part_number": "0530203022",
+      "price": 282.69
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "COVER SEALING",
+      "part_number": "0480304004",
+      "price": 47.57
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "STUFFING BOX PACKING SET",
+      "part_number": "0410116001",
+      "price": 33.81
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "DESSICATOR CARTRIDGE",
+      "part_number": "044012001",
+      "price": 98.52
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "TANK INSTALLATION VALVE",
+      "part_number": "0420220000",
+      "price": 398.06
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "0460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "2/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "3/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "3/2 WAY SOLENOID VALVE",
+      "part_number": "0410313104",
+      "price": 101.5
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "CELL CLEANING BRUSH FOR OMD-11",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 250",
+      "category": "DVZ VC 250",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "STATOR",
+      "part_number": "0410119002",
+      "price": 196.86
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "U-GASKET FOR COALESCER CHAMBER",
+      "part_number": "0650304016",
+      "price": 28.14
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "COALESCER SET",
+      "part_number": "0530203003",
+      "price": 282.72
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "COVER SEALING",
+      "part_number": "0480304005",
+      "price": 53.53
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "STUFFING BOX PACKING SET",
+      "part_number": "0410116002",
+      "price": 33.81
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "DESSICATOR CARTRIDGE",
+      "part_number": "0440120001",
+      "price": 98.52
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "SENSOR ELECTRODE",
+      "part_number": "0460119001",
+      "price": 264.95
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "2/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211001",
+      "price": 221.05
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "3/2 WAY PISTON VALVE 3/4",
+      "part_number": "0420211102",
+      "price": 383.18
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "3/2 WAY SOLENOID VALVE",
+      "part_number": "0410313104",
+      "price": 101.5
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "TANK INSTALLATION VALVE",
+      "part_number": "0420220000",
+      "price": 398.06
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "CELL CLEANING BRUSH FOR OMD-11",
+      "part_number": "0440126002",
+      "price": 12.38
+    },
+    {
+      "brand": "DVZ",
+      "model": "DVZ VC 500",
+      "category": "DVZ VC 500",
+      "name": "MEASURING CELL OMD2005",
+      "part_number": "0440113024",
+      "price": 3080.4
+    }
+  ]
+}
