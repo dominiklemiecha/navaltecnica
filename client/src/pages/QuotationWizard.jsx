@@ -48,6 +48,11 @@ export default function QuotationWizard() {
   const [loadingEdit, setLoadingEdit] = useState(!!editId);
   const [editQuotationNumber, setEditQuotationNumber] = useState('');
 
+  // Scroll al top ad ogni cambio di step (mobile UX)
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [step]);
+
   // Reference data
   const [locations, setLocations] = useState([]);
   const [destinations, setDestinations] = useState([]);
