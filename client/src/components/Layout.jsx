@@ -14,23 +14,30 @@ export default function Layout() {
 
   return (
     <div className="layout">
-      {/* Mobile header bar */}
-      <div className="mobile-header">
-        <button className="hamburger-btn" onClick={() => setSidebarOpen(!sidebarOpen)} aria-label="Menu">
+      {/* Mobile bottom bar (fissa) */}
+      <div className="mobile-bottom-bar">
+        <button
+          className={`mobile-bb-btn ${sidebarOpen ? 'active' : ''}`}
+          onClick={() => setSidebarOpen(!sidebarOpen)}
+          aria-label="Menu"
+        >
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
             {sidebarOpen
               ? <path d="M18 6L6 18M6 6l12 12" />
               : <><path d="M3 12h18" /><path d="M3 6h18" /><path d="M3 18h18" /></>
             }
           </svg>
+          <span>{sidebarOpen ? 'Chiudi' : 'Menu'}</span>
         </button>
-        <img src="/logo.png" alt="Navaltecnica" className="mobile-header-logo" />
+        <img src="/logo.png" alt="Navaltecnica" className="mobile-bb-logo" />
+        <div className="mobile-bb-user" title={user?.name}>{user?.name?.[0] || 'A'}</div>
       </div>
 
-      {/* Overlay */}
+      {/* Overlay (bottom-sheet) */}
       {sidebarOpen && <div className="sidebar-overlay" onClick={() => setSidebarOpen(false)} />}
 
       <aside className={`sidebar ${sidebarOpen ? 'sidebar-open' : ''}`}>
+        <div className="sidebar-drag-handle" aria-hidden="true" />
         <div className="sidebar-brand">
           <img src="/logo.png" alt="Navaltecnica" className="sidebar-logo-img" />
         </div>

@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
 :root {
   --bg: #f4f6f9;
   --sidebar-bg: #ffffff;
@@ -647,51 +652,83 @@ input[type="number"] {
   width: 90px;
 }
 
-/* ========== MOBILE HEADER ========== */
+/* ========== MOBILE BOTTOM BAR ========== */
 
-.mobile-header {
+.mobile-bottom-bar {
   display: none;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   right: 0;
-  height: 52px;
+  height: 60px;
+  padding-bottom: env(safe-area-inset-bottom, 0);
   background: var(--card-bg);
-  border-bottom: 1px solid var(--border);
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
   z-index: 200;
   align-items: center;
-  padding: 0 12px;
+  justify-content: space-between;
+  padding-left: 14px;
+  padding-right: 14px;
   gap: 12px;
 }
 
-.mobile-header-logo {
-  height: 28px;
+.mobile-bb-btn {
+  background: var(--row-hover);
+  border: none;
+  padding: 8px 14px 8px 10px;
+  cursor: pointer;
+  color: var(--text);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  transition: all 0.15s;
+}
+
+.mobile-bb-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.mobile-bb-logo {
+  height: 26px;
   object-fit: contain;
   filter: brightness(0) saturate(100%) invert(15%) sepia(70%) saturate(2000%) hue-rotate(215deg) brightness(95%);
 }
 
-.hamburger-btn {
-  background: none;
-  border: none;
-  padding: 6px;
-  cursor: pointer;
-  color: var(--text);
-  border-radius: 6px;
+.mobile-bb-user {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--accent-light);
+  color: var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
 }
 
-.hamburger-btn:hover {
-  background: var(--row-hover);
+.sidebar-drag-handle {
+  display: none;
 }
 
 .sidebar-overlay {
   display: none;
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.45);
   z-index: 150;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* ========== TABLE SCROLL WRAPPER ========== */
@@ -720,31 +757,57 @@ input[type="number"] {
 }
 
 @media (max-width: 768px) {
-  /* Mobile header visible */
-  .mobile-header {
+  /* Bottom bar visible */
+  .mobile-bottom-bar {
     display: flex;
   }
 
-  /* Sidebar as off-canvas overlay */
+  /* Sidebar as bottom sheet (slides up from below) */
   .sidebar {
-    width: 260px;
-    transform: translateX(-100%);
-    transition: transform 0.25s ease;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
     z-index: 160;
+    border-right: none;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-shadow: 0 -8px 30px rgba(0,0,0,0.18);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
   }
 
   .sidebar.sidebar-open {
-    transform: translateX(0);
+    transform: translateY(0);
+  }
+
+  /* Drag handle visible on mobile */
+  .sidebar-drag-handle {
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 999px;
+    margin: 8px auto 4px;
+    flex-shrink: 0;
   }
 
   .sidebar-overlay {
     display: block;
   }
 
-  /* Main content full width with top padding for mobile header */
+  /* Main content full width, padding-bottom for fixed bottom bar */
   .main-content {
     margin-left: 0;
-    padding: 64px 12px 16px;
+    padding: 16px 12px calc(76px + env(safe-area-inset-bottom, 0));
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Page header stacks vertically */
@@ -798,23 +861,26 @@ input[type="number"] {
     font-size: 0.75rem;
   }
 
-  /* Tables scroll horizontally */
+  /* Tables scroll horizontally — but only inside their own card */
   .data-table,
   .parts-table,
   .summary-table {
     min-width: 600px;
   }
 
+  /* Card containing a wide table: scroll lives INSIDE the card, not the page */
   .card:has(.data-table),
-  .card:has(.parts-table) {
-    padding: 0;
-    overflow: hidden;
-  }
-
-  /* Make table cards scrollable */
-  .card {
+  .card:has(.parts-table),
+  .card:has(.summary-table) {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+    padding: 0;
+  }
+
+  /* Default cards: prevent any internal overflow from leaking horizontally */
+  .card {
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Button group stacks on mobile */
