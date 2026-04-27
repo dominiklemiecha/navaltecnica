@@ -51,6 +51,13 @@ services:
       - "80"
     depends_on:
       - server
+    networks:
+      - default
+      - dokploy-network
+
+networks:
+  dokploy-network:
+    external: true
 
 volumes:
   mysql_data:
