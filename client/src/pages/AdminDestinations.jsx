@@ -115,16 +115,16 @@ export default function AdminDestinations() {
               <tr key={d.id}>
                 {editingId === d.id ? (
                   <>
-                    <td className="edit-row"><input value={editData.name} onChange={e => setEditData(prev => ({ ...prev, name: e.target.value }))} /></td>
-                    <td>
+                    <td className="edit-row" data-label="Destinazione"><input value={editData.name} onChange={e => setEditData(prev => ({ ...prev, name: e.target.value }))} /></td>
+                    <td data-label="Location">
                       <select value={editData.location_id} onChange={e => setEditData(prev => ({ ...prev, location_id: e.target.value }))} style={{ padding: '5px', fontSize: '0.83rem' }}>
                         {locations.map(l => <option key={l.id} value={l.id}>{l.name}</option>)}
                       </select>
                     </td>
-                    <td className="edit-row"><input type="number" value={editData.km} onChange={e => setEditData(prev => ({ ...prev, km: e.target.value }))} /></td>
-                    <td className="edit-row"><input type="number" step="0.1" value={editData.travel_hours} onChange={e => setEditData(prev => ({ ...prev, travel_hours: e.target.value }))} /></td>
-                    <td className="edit-row"><input type="number" step="0.01" value={editData.highway_cost} onChange={e => setEditData(prev => ({ ...prev, highway_cost: e.target.value }))} /></td>
-                    <td>
+                    <td className="edit-row" data-label="KM (A/R)"><input type="number" value={editData.km} onChange={e => setEditData(prev => ({ ...prev, km: e.target.value }))} /></td>
+                    <td className="edit-row" data-label="Ore Viaggio"><input type="number" step="0.1" value={editData.travel_hours} onChange={e => setEditData(prev => ({ ...prev, travel_hours: e.target.value }))} /></td>
+                    <td className="edit-row" data-label="Autostrada"><input type="number" step="0.01" value={editData.highway_cost} onChange={e => setEditData(prev => ({ ...prev, highway_cost: e.target.value }))} /></td>
+                    <td className="actions-cell">
                       <div style={{ display: 'flex', gap: '4px' }}>
                         <button className="btn btn-sm btn-success" onClick={handleSave}>Salva</button>
                         <button className="btn btn-sm btn-secondary" onClick={() => setEditingId(null)}>Annulla</button>
@@ -133,12 +133,12 @@ export default function AdminDestinations() {
                   </>
                 ) : (
                   <>
-                    <td><strong>{d.name}</strong></td>
-                    <td><span className={`status-badge status-${d.location_name === 'ITALY' ? 'accepted' : d.location_name === 'MEDITERRANEAN' ? 'sent' : 'draft'}`}>{d.location_name}</span></td>
-                    <td style={{ textAlign: 'right' }}>{d.km}</td>
-                    <td style={{ textAlign: 'right' }}>{d.travel_hours}</td>
-                    <td style={{ textAlign: 'right' }}>{d.highway_cost}</td>
-                    <td>
+                    <td data-label="Destinazione"><strong>{d.name}</strong></td>
+                    <td data-label="Location"><span className={`status-badge status-${d.location_name === 'ITALY' ? 'accepted' : d.location_name === 'MEDITERRANEAN' ? 'sent' : 'draft'}`}>{d.location_name}</span></td>
+                    <td data-label="KM (A/R)" style={{ textAlign: 'right' }}>{d.km}</td>
+                    <td data-label="Ore Viaggio" style={{ textAlign: 'right' }}>{d.travel_hours}</td>
+                    <td data-label="Autostrada" style={{ textAlign: 'right' }}>{d.highway_cost}</td>
+                    <td className="actions-cell">
                       <div style={{ display: 'flex', gap: '4px' }}>
                         <button className="btn btn-sm btn-secondary" onClick={() => startEdit(d)}>Modifica</button>
                         <button className="btn btn-sm btn-danger" onClick={() => handleDelete(d.id)}>Elimina</button>

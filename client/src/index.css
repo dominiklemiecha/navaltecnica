@@ -890,20 +890,228 @@ input[type="number"] {
     font-size: 0.75rem;
   }
 
-  /* Tables scroll horizontally — but only inside their own card */
+  /* ===== TABLES → MOBILE CARD LIST PATTERN ===== */
+  /* Each <tr> becomes a stacked card with label/value rows */
+
   .data-table,
   .parts-table,
   .summary-table {
-    min-width: 600px;
+    min-width: 0;
+    border-collapse: separate;
+    border-spacing: 0;
   }
 
-  /* Card containing a wide table: scroll lives INSIDE the card, not the page */
+  .data-table thead,
+  .parts-table thead,
+  .summary-table thead {
+    display: none;
+  }
+
+  .data-table tbody,
+  .parts-table tbody,
+  .summary-table tbody {
+    display: block;
+    padding: 8px;
+  }
+
+  .data-table tr,
+  .parts-table tr,
+  .summary-table tr {
+    display: block;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+
+  .data-table tr:hover,
+  .parts-table tr:hover {
+    background: var(--card-bg);
+  }
+
+  .data-table td,
+  .parts-table td,
+  .summary-table td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 0;
+    border-bottom: 1px solid #f5f5f7;
+    font-size: 0.85rem;
+    text-align: right;
+    min-height: 32px;
+  }
+
+  .data-table tr td:last-child,
+  .parts-table tr td:last-child,
+  .summary-table tr td:last-child {
+    border-bottom: none;
+  }
+
+  .data-table td::before,
+  .parts-table td::before,
+  .summary-table td::before {
+    content: attr(data-label);
+    color: var(--text-muted);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    text-align: left;
+    flex-shrink: 0;
+    max-width: 45%;
+  }
+
+  /* Cells with no data-label: stretch full width (e.g. action rows) */
+  .data-table td:not([data-label])::before,
+  .parts-table td:not([data-label])::before,
+  .summary-table td:not([data-label])::before {
+    content: none;
+  }
+
+  .data-table td:not([data-label]),
+  .parts-table td:not([data-label]),
+  .summary-table td:not([data-label]) {
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  /* Category section row — different styling */
+  .data-table tr.category-row,
+  .parts-table tr.category-row {
+    background: var(--accent-light);
+    border-color: transparent;
+    padding: 8px 14px;
+    margin-bottom: 4px;
+    box-shadow: none;
+  }
+
+  .data-table tr.category-row td,
+  .parts-table tr.category-row td {
+    padding: 0;
+    border-bottom: none;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 0.78rem;
+    justify-content: flex-start;
+    text-align: left;
+    min-height: 0;
+  }
+
+  .data-table tr.category-row td::before,
+  .parts-table tr.category-row td::before {
+    content: none;
+  }
+
+  /* Action cells — full-width row of buttons */
+  .data-table td.actions-cell,
+  .parts-table td.actions-cell {
+    padding-top: 10px;
+    margin-top: 4px;
+    border-top: 1px dashed var(--border);
+    border-bottom: none;
+  }
+
+  .data-table td.actions-cell::before,
+  .parts-table td.actions-cell::before {
+    content: none;
+  }
+
+  .data-table td.actions-cell > div,
+  .parts-table td.actions-cell > div {
+    display: flex;
+    gap: 6px;
+    width: 100%;
+  }
+
+  .data-table td.actions-cell .btn,
+  .parts-table td.actions-cell .btn {
+    flex: 1;
+    justify-content: center;
+  }
+
+  /* Numeric inputs in edit/qty rows take more space */
+  .data-table td input[type="number"],
+  .data-table td input[type="text"],
+  .parts-table td input[type="number"],
+  .parts-table td input[type="text"] {
+    max-width: 120px;
+    width: auto;
+  }
+
+  /* Empty-state row */
+  .data-table td[colspan],
+  .parts-table td[colspan] {
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* SUMMARY TABLE override: each tr is a flat row label↔value (not stacked) */
+  .summary-table tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+
+  .summary-table td {
+    display: block;
+    border-bottom: none;
+    padding: 0;
+    min-height: 0;
+  }
+
+  .summary-table td::before {
+    content: none !important;
+  }
+
+  .summary-table td.label {
+    text-align: left;
+    color: var(--text-light);
+    font-size: 0.78rem;
+    font-weight: 500;
+    flex: 1;
+  }
+
+  .summary-table td.value {
+    text-align: right;
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: var(--text);
+  }
+
+  .summary-table tr.total-row,
+  .summary-table tr.discount-row {
+    background: var(--accent-light);
+    border-color: var(--accent);
+  }
+
+  .summary-table tr.total-row td.label,
+  .summary-table tr.total-row td.value,
+  .summary-table tr.discount-row td.label,
+  .summary-table tr.discount-row td.value {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .summary-table tr.total-row td.value,
+  .summary-table tr.discount-row td.value {
+    font-size: 1.05rem;
+  }
+
+  /* Card containing tables — let the inner card-list breathe */
   .card:has(.data-table),
   .card:has(.parts-table),
   .card:has(.summary-table) {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
     padding: 0;
+    overflow-x: visible;
+    background: transparent;
+    border: none;
+    box-shadow: none;
   }
 
   /* Default cards: prevent any internal overflow from leaking horizontally */

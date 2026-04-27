@@ -327,11 +327,11 @@ export default function AdminCatalog() {
                   if (editingPart === p.id) {
                     return (
                       <tr key={p.id}>
-                        <td className="edit-row"><input value={editData.name} onChange={e => setEditData(d => ({ ...d, name: e.target.value }))} /></td>
-                        <td className="edit-row"><input value={editData.part_number} onChange={e => setEditData(d => ({ ...d, part_number: e.target.value }))} style={{ width: '100px' }} /></td>
-                        <td className="edit-row"><input type="number" step="0.01" value={editData.list_price} onChange={e => setEditData(d => ({ ...d, list_price: e.target.value }))} style={{ width: '90px' }} /></td>
+                        <td className="edit-row" data-label="Descrizione"><input value={editData.name} onChange={e => setEditData(d => ({ ...d, name: e.target.value }))} /></td>
+                        <td className="edit-row" data-label="Codice"><input value={editData.part_number} onChange={e => setEditData(d => ({ ...d, part_number: e.target.value }))} style={{ width: '100px' }} /></td>
+                        <td className="edit-row" data-label="Listino"><input type="number" step="0.01" value={editData.list_price} onChange={e => setEditData(d => ({ ...d, list_price: e.target.value }))} style={{ width: '90px' }} /></td>
                         <td colSpan="4" style={{ color: '#94a3b8', fontSize: '0.8rem', textAlign: 'center' }}>Calcolati automaticamente</td>
-                        <td>
+                        <td className="actions-cell">
                           <div style={{ display: 'flex', gap: '4px' }}>
                             <button className="btn btn-sm btn-success" onClick={handleSavePart}>Salva</button>
                             <button className="btn btn-sm btn-secondary" onClick={() => setEditingPart(null)}>X</button>
@@ -343,15 +343,15 @@ export default function AdminCatalog() {
 
                   return (
                     <tr key={p.id}>
-                      <td>{p.name}</td>
-                      <td style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#64748b' }}>{p.part_number}</td>
-                      <td style={{ textAlign: 'right', fontWeight: 600 }}>{formatCurrency(p.list_price)}</td>
-                      <td style={{ textAlign: 'right', color: '#dc2626' }}>{formatCurrency(cost)}</td>
-                      <td style={{ textAlign: 'right' }}>{formatCurrency(saleShipyard)}</td>
-                      <td style={{ textAlign: 'right' }}>{formatCurrency(saleShipowner)}</td>
-                      <td style={{ textAlign: 'right', color: '#059669', fontWeight: 500 }}>{formatCurrency(marginSY)}</td>
-                      <td style={{ textAlign: 'right', color: '#059669', fontWeight: 500 }}>{formatCurrency(marginSO)}</td>
-                      <td>
+                      <td data-label="Descrizione">{p.name}</td>
+                      <td data-label="Codice" style={{ fontFamily: 'monospace', fontSize: '0.8rem', color: '#64748b' }}>{p.part_number}</td>
+                      <td data-label="Listino" style={{ textAlign: 'right', fontWeight: 600 }}>{formatCurrency(p.list_price)}</td>
+                      <td data-label={`Costo (${(costPct*100).toFixed(0)}%)`} style={{ textAlign: 'right', color: '#dc2626' }}>{formatCurrency(cost)}</td>
+                      <td data-label={`Shipyard (+${(surcharges.shipyard*100).toFixed(0)}%)`} style={{ textAlign: 'right' }}>{formatCurrency(saleShipyard)}</td>
+                      <td data-label={`Ship Owner (+${(surcharges.shipowner*100).toFixed(0)}%)`} style={{ textAlign: 'right' }}>{formatCurrency(saleShipowner)}</td>
+                      <td data-label="Margine SY" style={{ textAlign: 'right', color: '#059669', fontWeight: 500 }}>{formatCurrency(marginSY)}</td>
+                      <td data-label="Margine SO" style={{ textAlign: 'right', color: '#059669', fontWeight: 500 }}>{formatCurrency(marginSO)}</td>
+                      <td className="actions-cell">
                         <div style={{ display: 'flex', gap: '4px' }}>
                           <button className="btn btn-sm btn-secondary" onClick={() => startEdit(p)}>Modifica</button>
                           <button className="btn btn-sm btn-danger" onClick={() => handleDeletePart(p.id)}>X</button>

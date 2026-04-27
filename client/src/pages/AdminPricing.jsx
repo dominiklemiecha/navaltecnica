@@ -73,9 +73,9 @@ export default function AdminPricing() {
             <tbody>
               {items.map(s => (
                 <tr key={s.id}>
-                  <td><strong>{s.label}</strong></td>
-                  <td style={{ fontFamily: 'monospace', fontSize: '0.78rem', color: '#64748b' }}>{s.setting_key}</td>
-                  <td>
+                  <td data-label="Parametro"><strong>{s.label}</strong></td>
+                  <td data-label="Chiave" style={{ fontFamily: 'monospace', fontSize: '0.78rem', color: '#64748b' }}>{s.setting_key}</td>
+                  <td data-label="Valore">
                     {editingId === s.id ? (
                       <input
                         type="number"
@@ -91,16 +91,18 @@ export default function AdminPricing() {
                       <span style={{ fontWeight: 600 }}>{formatValue(s.setting_key, s.value)}</span>
                     )}
                   </td>
-                  <td>
+                  <td className="actions-cell">
                     {editingId === s.id ? (
                       <div style={{ display: 'flex', gap: '4px' }}>
                         <button className="btn btn-sm btn-success" onClick={() => handleSave(s.id)} disabled={saving}>Salva</button>
                         <button className="btn btn-sm btn-secondary" onClick={() => setEditingId(null)}>Annulla</button>
                       </div>
                     ) : (
-                      <button className="btn btn-sm btn-secondary" onClick={() => { setEditingId(s.id); setEditValue(s.value); }}>
-                        Modifica
-                      </button>
+                      <div>
+                        <button className="btn btn-sm btn-secondary" onClick={() => { setEditingId(s.id); setEditValue(s.value); }}>
+                          Modifica
+                        </button>
+                      </div>
                     )}
                   </td>
                 </tr>

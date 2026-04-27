@@ -52,10 +52,10 @@ export default function StepParts({
                   const total = qty * saleUnit;
                   return (
                     <tr key={part.id}>
-                      <td>{part.name}</td>
-                      <td>{part.part_number}</td>
-                      <td className="price">{formatCurrency(part.list_price)}</td>
-                      <td>
+                      <td data-label="Descrizione">{part.name}</td>
+                      <td data-label="Codice">{part.part_number}</td>
+                      <td data-label="Listino" className="price">{formatCurrency(part.list_price)}</td>
+                      <td data-label="Quantita">
                         <input
                           type="number"
                           min="0"
@@ -64,8 +64,8 @@ export default function StepParts({
                           placeholder="0"
                         />
                       </td>
-                      <td className="price">{formatCurrency(saleUnit)}</td>
-                      <td className="price"><strong>{qty > 0 ? formatCurrency(total) : '-'}</strong></td>
+                      <td data-label="Vendita Unit." className="price">{formatCurrency(saleUnit)}</td>
+                      <td data-label="Totale" className="price"><strong>{qty > 0 ? formatCurrency(total) : '-'}</strong></td>
                     </tr>
                   );
                 })}
