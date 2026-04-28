@@ -36,7 +36,11 @@ export default function StepWorkshop({ workshop, setWorkshop, workshopMaterials,
       {workshop.map((w, i) => {
         const juniorTotal = (w.junior_people || 0) * (w.junior_hours || 0) * rate;
         const seniorTotal = (w.senior_people || 0) * (w.senior_hours || 0) * rate;
-        const total = juniorTotal + seniorTotal + (parseFloat(w.consumables) || 0) + (parseFloat(w.disposals) || 0);
+        const consMarkup = pricing.consumable_increase || 1.25;
+        const dispMarkup = pricing.disposal_increase || 1.25;
+        const total = juniorTotal + seniorTotal +
+          (parseFloat(w.consumables) || 0) * consMarkup +
+          (parseFloat(w.disposals) || 0) * dispMarkup;
 
         return (
           <div key={i} className="service-block">

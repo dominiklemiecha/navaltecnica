@@ -39,14 +39,15 @@ function calcTravelSale(travel, pricing, locationName) {
   const isAbroad = locationName !== 'ITALY';
   const dailyRate = isAbroad ? pricing.daily_allowance_abroad : pricing.daily_allowance_italy;
   const halfRate = isAbroad ? pricing.daily_allowance_half_abroad : pricing.daily_allowance_half_italy;
+  const extrasMarkup = pricing.various_services_increase || 1.1;
 
   return {
     km: (travel.km || 0) * pricing.cost_per_km,
     hours: (travel.travel_hours || 0) * pricing.travel_hour_rate,
     highway: (travel.highway || 0) * (1 + pricing.highway_surcharge),
     allowance: (travel.daily_allowance || 0) * dailyRate + (travel.daily_allowance_half || 0) * halfRate,
-    extras: (travel.rental_car || 0) + (travel.flights || 0) + (travel.taxi || 0) +
-            (travel.parking || 0) + (travel.other || 0)
+    extras: ((travel.rental_car || 0) + (travel.flights || 0) + (travel.taxi || 0) +
+             (travel.parking || 0) + (travel.other || 0)) * extrasMarkup
   };
 }
 

@@ -164,7 +164,8 @@ function generatePdf(quotation, pricing) {
           const hoursTotal = (t.travel_hours || 0) * pricing.travel_hour_rate;
           const highwayTotal = (t.highway || 0) * (1 + pricing.highway_surcharge);
           const allowanceTotal = (t.daily_allowance || 0) * dailyRate + (t.daily_allowance_half || 0) * halfRate;
-          const extras = (t.rental_car || 0) + (t.flights || 0) + (t.taxi || 0) + (t.parking || 0) + (t.other || 0);
+          const extrasMarkup = pricing.various_services_increase || 1.1;
+          const extras = ((t.rental_car || 0) + (t.flights || 0) + (t.taxi || 0) + (t.parking || 0) + (t.other || 0)) * extrasMarkup;
           const serviceTotal = kmTotal + hoursTotal + highwayTotal + allowanceTotal + extras;
           sectionTotal += serviceTotal;
 
@@ -173,11 +174,11 @@ function generatePdf(quotation, pricing) {
           if (t.highway > 0) doc.text(`  Highway: ${formatCurrency(highwayTotal)}`);
           if (t.daily_allowance > 0) doc.text(`  Daily Allowance: ${t.daily_allowance} x ${formatCurrency(dailyRate)} = ${formatCurrency(t.daily_allowance * dailyRate)}`);
           if (t.daily_allowance_half > 0) doc.text(`  Half Allowance: ${t.daily_allowance_half} x ${formatCurrency(halfRate)} = ${formatCurrency(t.daily_allowance_half * halfRate)}`);
-          if (t.rental_car > 0) doc.text(`  Rental Car: ${formatCurrency(t.rental_car)}`);
-          if (t.flights > 0) doc.text(`  Flights: ${formatCurrency(t.flights)}`);
-          if (t.taxi > 0) doc.text(`  Taxi: ${formatCurrency(t.taxi)}`);
-          if (t.parking > 0) doc.text(`  Parking: ${formatCurrency(t.parking)}`);
-          if (t.other > 0) doc.text(`  Other: ${formatCurrency(t.other)}`);
+          if (t.rental_car > 0) doc.text(`  Rental Car: ${formatCurrency(t.rental_car * extrasMarkup)}`);
+          if (t.flights > 0) doc.text(`  Flights: ${formatCurrency(t.flights * extrasMarkup)}`);
+          if (t.taxi > 0) doc.text(`  Taxi: ${formatCurrency(t.taxi * extrasMarkup)}`);
+          if (t.parking > 0) doc.text(`  Parking: ${formatCurrency(t.parking * extrasMarkup)}`);
+          if (t.other > 0) doc.text(`  Other: ${formatCurrency(t.other * extrasMarkup)}`);
           doc.moveDown(0.2);
         }
 
@@ -199,8 +200,10 @@ function generatePdf(quotation, pricing) {
         for (const w of quotation.workshop) {
           const juniorTotal = (w.junior_people || 0) * (w.junior_hours || 0) * (w.junior_rate || 0);
           const seniorTotal = (w.senior_people || 0) * (w.senior_hours || 0) * (w.senior_rate || 0);
-          const consumables = w.consumables || 0;
-          const disposals = w.disposals || 0;
+          const consMarkup = pricing.consumable_increase || 1.25;
+          const dispMarkup = pricing.disposal_increase || 1.25;
+          const consumables = (w.consumables || 0) * consMarkup;
+          const disposals = (w.disposals || 0) * dispMarkup;
           sectionTotal += juniorTotal + seniorTotal + consumables + disposals;
 
           doc.font('Helvetica-Bold').text(`Service ${w.service_number}`);
@@ -302,17 +305,20 @@ function calcTotals(quotation, pricing) {
       travelTotal += (t.highway || 0) * (1 + pricing.highway_surcharge);
       travelTotal += (t.daily_allowance || 0) * dailyRate;
       travelTotal += (t.daily_allowance_half || 0) * halfRate;
-      travelTotal += (t.rental_car || 0) + (t.flights || 0) + (t.taxi || 0) + (t.parking || 0) + (t.other || 0);
+      const extrasMarkup = pricing.various_services_increase || 1.1;
+      travelTotal += ((t.rental_car || 0) + (t.flights || 0) + (t.taxi || 0) + (t.parking || 0) + (t.other || 0)) * extrasMarkup;
     }
   }
 
   let workshopTotal = 0;
   if (quotation.workshop) {
+    const consMarkup = pricing.consumable_increase || 1.25;
+    const dispMarkup = pricing.disposal_increase || 1.25;
     for (const w of quotation.workshop) {
       workshopTotal += (w.junior_people || 0) * (w.junior_hours || 0) * (w.junior_rate || 0);
       workshopTotal += (w.senior_people || 0) * (w.senior_hours || 0) * (w.senior_rate || 0);
-      workshopTotal += w.consumables || 0;
-      workshopTotal += w.disposals || 0;
+      workshopTotal += (w.consumables || 0) * consMarkup;
+      workshopTotal += (w.disposals || 0) * dispMarkup;
     }
   }
   if (quotation.workshopMaterials) {

@@ -1,4 +1,4 @@
-import { formatCurrency, getSurcharge, calcLabourRate, calcTravelSaleTotal } from '../utils/pricing';
+import { formatCurrency, getSurcharge, getCostPercentage, calcLabourRate, calcLabourCostRate, calcTravelSaleTotal, calcTravelCostTotal } from '../utils/pricing';
 
 export default function StepSummary({
   general, selectedParts, customParts, services, travel, workshop, workshopMaterials,
@@ -7,8 +7,9 @@ export default function StepSummary({
   hamannParts, dvzParts, models,
   onSave, saving, isEdit
 }) {
-  // Calcola totale ricambi
+  // Calcola totale ricambi (vendita + costo)
   let partsTotal = 0;
+  let partsCost = 0;
   const allCategories = [...hamannParts, ...dvzParts];
   for (const [partId, qty] of Object.entries(selectedParts)) {
     if (qty <= 0) continue;
@@ -18,7 +19,9 @@ export default function StepSummary({
         const model = models.find(m => m.id === cat.model_id);
         const brandName = model?.brand_name || 'HAMANN';
         const surcharge = getSurcharge(general.client_type, brandName, pricing);
+        const costPct = getCostPercentage(brandName, pricing);
         partsTotal += qty * p.list_price * (1 + surcharge);
+        partsCost += qty * p.list_price * costPct;
         break;
       }
     }
@@ -27,42 +30,60 @@ export default function StepSummary({
   for (const p of customParts) {
     if (p.quantity > 0 && p.unit_price > 0) {
       partsTotal += p.quantity * p.unit_price * (1 + (pricing.shipyard_surcharge_hamann || 0.05));
+      partsCost += p.quantity * p.unit_price * (pricing.hamann_cost_pct || 0.8);
     }
   }
 
-  // Calcola totale servizi
+  // Calcola totale servizi (vendita + costo)
   const juniorRate = calcLabourRate('junior', locationName, pricing);
   const seniorRate = calcLabourRate('senior', locationName, pricing);
+  const juniorCostRate = calcLabourCostRate('junior', pricing);
+  const seniorCostRate = calcLabourCostRate('senior', pricing);
   let servicesTotal = 0;
+  let servicesCost = 0;
   for (const s of services) {
-    servicesTotal += (s.junior_people || 0) * (s.junior_hours || 0) * juniorRate;
-    servicesTotal += (s.senior_people || 0) * (s.senior_hours || 0) * seniorRate;
-    servicesTotal += parseFloat(s.consumables) || 0;
+    const jrH = (s.junior_people || 0) * (s.junior_hours || 0);
+    const srH = (s.senior_people || 0) * (s.senior_hours || 0);
+    servicesTotal += jrH * juniorRate + srH * seniorRate + (parseFloat(s.consumables) || 0);
+    servicesCost += jrH * juniorCostRate + srH * seniorCostRate + (parseFloat(s.consumables) || 0);
   }
 
-  // Calcola totale trasferte
+  // Calcola totale trasferte (vendita + costo)
   let travelTotal = 0;
+  let travelCost = 0;
   for (const t of travel) {
     if (t.enabled === false) continue;
     travelTotal += calcTravelSaleTotal(t, pricing, locationName);
+    travelCost += calcTravelCostTotal(t, pricing);
   }
 
-  // Calcola totale officina
+  // Calcola totale officina (vendita + costo)
   const workshopRate = pricing.travel_hour_rate || 102.5;
+  const consMarkup = pricing.consumable_increase || 1.25;
+  const dispMarkup = pricing.disposal_increase || 1.25;
   let workshopTotal = 0;
+  let workshopCost = 0;
   for (const w of workshop) {
-    workshopTotal += (w.junior_people || 0) * (w.junior_hours || 0) * workshopRate;
-    workshopTotal += (w.senior_people || 0) * (w.senior_hours || 0) * workshopRate;
-    workshopTotal += parseFloat(w.consumables) || 0;
-    workshopTotal += parseFloat(w.disposals) || 0;
+    const jrH = (w.junior_people || 0) * (w.junior_hours || 0);
+    const srH = (w.senior_people || 0) * (w.senior_hours || 0);
+    const cons = parseFloat(w.consumables) || 0;
+    const disp = parseFloat(w.disposals) || 0;
+    workshopTotal += jrH * workshopRate + srH * workshopRate +
+      cons * consMarkup + disp * dispMarkup;
+    workshopCost += jrH * seniorCostRate + srH * seniorCostRate + cons + disp;
   }
   for (const m of workshopMaterials) {
-    workshopTotal += (m.quantity || 0) * (m.unit_price || 0) * (pricing.material_increase || 1.25);
+    const base = (m.quantity || 0) * (m.unit_price || 0);
+    workshopTotal += base * (pricing.material_increase || 1.25);
+    workshopCost += base;
   }
 
   const grandTotal = partsTotal + servicesTotal + travelTotal + workshopTotal;
+  const grandCost = partsCost + servicesCost + travelCost + workshopCost;
   const discount = parseFloat(discountAmount) || 0;
   const finalTotal = grandTotal - discount;
+  const margin = finalTotal - grandCost;
+  const marginPct = finalTotal > 0 ? (margin / finalTotal) * 100 : 0;
 
   return (
     <>
@@ -110,6 +131,40 @@ export default function StepSummary({
                 </tr>
               </>
             )}
+          </tbody>
+        </table>
+      </div>
+
+      <div className="card" style={{ background: '#fff8e1', borderLeft: '4px solid #f59e0b' }}>
+        <h2 style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+          Margine <span style={{ fontSize: '0.7rem', fontWeight: 'normal', color: '#92400e', background: '#fde68a', padding: '2px 8px', borderRadius: '4px' }}>uso interno — non incluso nel PDF</span>
+        </h2>
+        <table className="summary-table">
+          <tbody>
+            <tr>
+              <td className="label">Costo Materiale e Ricambi</td>
+              <td className="value">{formatCurrency(partsCost)}</td>
+            </tr>
+            <tr>
+              <td className="label">Costo Service</td>
+              <td className="value">{formatCurrency(servicesCost)}</td>
+            </tr>
+            <tr>
+              <td className="label">Costo Diarie e Rimborsi</td>
+              <td className="value">{formatCurrency(travelCost)}</td>
+            </tr>
+            <tr>
+              <td className="label">Costo Produzione</td>
+              <td className="value">{formatCurrency(workshopCost)}</td>
+            </tr>
+            <tr className="total-row">
+              <td className="label">COSTO TOTALE</td>
+              <td className="value">{formatCurrency(grandCost)}</td>
+            </tr>
+            <tr className="total-row" style={{ color: margin >= 0 ? '#047857' : '#b91c1c' }}>
+              <td className="label">MARGINE {discount > 0 ? '(post-sconto)' : ''}</td>
+              <td className="value">{formatCurrency(margin)} ({marginPct.toFixed(1)}%)</td>
+            </tr>
           </tbody>
         </table>
       </div>

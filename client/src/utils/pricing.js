@@ -41,18 +41,36 @@ export function calcWorkshopRate(pricing) {
   return pricing.travel_hour_rate || 102.5;
 }
 
+export function calcLabourCostRate(type, pricing) {
+  return type === 'junior' ? (pricing.junior_cost || 0) : (pricing.senior_cost || 0);
+}
+
+export function calcTravelCostTotal(travel, pricing) {
+  const fuel = pricing.fuel_cost_per_liter || 0;
+  const kml = pricing.km_per_liter || 1;
+  const kmCost = (travel.km || 0) * fuel / kml;
+  const hoursCost = (travel.travel_hours || 0) * (pricing.travel_hour_cost || 0);
+  const highwayCost = (travel.highway || 0);
+  const allowanceCost = (travel.daily_allowance || 0) * (pricing.allowance_cost || 0) +
+                        (travel.daily_allowance_half || 0) * (pricing.half_allowance_cost || 0);
+  const extras = (travel.rental_car || 0) + (travel.flights || 0) + (travel.taxi || 0) +
+                 (travel.parking || 0) + (travel.other || 0);
+  return kmCost + hoursCost + highwayCost + allowanceCost + extras;
+}
+
 export function calcTravelSaleTotal(travel, pricing, locationName) {
   const isAbroad = locationName !== 'ITALY';
   const dailyRate = isAbroad ? pricing.daily_allowance_abroad : pricing.daily_allowance_italy;
   const halfRate = isAbroad ? pricing.daily_allowance_half_abroad : pricing.daily_allowance_half_italy;
 
+  const extrasMarkup = pricing.various_services_increase || 1.1;
   return (travel.km || 0) * pricing.cost_per_km +
     (travel.travel_hours || 0) * pricing.travel_hour_rate +
     (travel.highway || 0) * (1 + pricing.highway_surcharge) +
     (travel.daily_allowance || 0) * dailyRate +
     (travel.daily_allowance_half || 0) * halfRate +
-    (travel.rental_car || 0) + (travel.flights || 0) +
-    (travel.taxi || 0) + (travel.parking || 0) + (travel.other || 0);
+    ((travel.rental_car || 0) + (travel.flights || 0) +
+     (travel.taxi || 0) + (travel.parking || 0) + (travel.other || 0)) * extrasMarkup;
 }
 
 export function formatCurrency(value) {
